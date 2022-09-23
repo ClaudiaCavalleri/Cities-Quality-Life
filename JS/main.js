@@ -73,11 +73,11 @@ async function getData() {
     citySummary.innerHTML = `<h2>Summary: </h2><p>${data.summary}</p>`;
     citySummary.style.borderBottom = "2px solid var(--turquoise)";
 
+    scoreWrapper.innerHTML = "";
     data.categories.forEach((e) => {
         scoreWrapper.insertAdjacentHTML("afterbegin", `<h2><b>${e.name}</b>: ${(e.score_out_of_10).toFixed(2)} / 10</h2>`);
     });
 
-    h2.setAttribute("style", `color: ${data.categories.color};`);
     
     const headerBackground = document.querySelector('header');
     headerBackground.style.backgroundImage = `url(${data2.photos[0].image.web})`;
