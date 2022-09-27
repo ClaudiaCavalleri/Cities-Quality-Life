@@ -30,7 +30,7 @@ body {
     font-size: 20px;
     text-align: center;
     color: var(--teal);
-    font-family: "Maven";
+    font-family: "Maven", sans-serif;
     width: 100%;
     display: flex;
     align-items: center;
@@ -144,8 +144,7 @@ p {
     text-align: center;
     margin: 0 auto;
     font-weight: 100;
-    max-width: 80vw;
-    
+    max-width: 80vw;   
 }
 
 .result-container {
@@ -157,6 +156,10 @@ p {
     justify-content: center;
     align-items: center;
     margin-bottom: 1rem;
+}
+
+.total-score-wrapper {
+    padding-bottom: 2rem;
 }
 
 .categories-wrapper {
@@ -202,7 +205,28 @@ footer a:hover {
     color:bisque;
 }
 
-@media screen and (min-width: 768px) {
+@media only screen and (max-width: 600px) {
+    .header-container {
+        padding: 5vh 5vw;
+    }
+    .search-box {
+        width: 80vw;
+        margin: 0.5rem;
+    }
+    #search-icon {
+        top: 1rem;
+        right: 1rem;
+    }
+    .introduction {
+        font-weight: 200;
+        max-width: 90vw;   
+    }
+    .result-container {
+        width: 90vw;
+    }
+}
+
+@media only screen and (min-width: 768px) {
     h1 {
         font-size: 4rem;
     }
@@ -235,6 +259,7 @@ footer a:hover {
     .total-score-wrapper {
         height: 25%;
         flex-grow: 2;
+
     }
     .score-wrapper h2 {
         font-size: 1.5rem;
