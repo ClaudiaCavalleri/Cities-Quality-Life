@@ -7,6 +7,7 @@
     "acorn-import-assertions": "^1.8.0",
     "ajv": "^6.12.6",
     "ajv-keywords": "^3.5.2",
+    "axios": "^0.27.2",
     "browserslist": "^4.21.4",
     "buffer-from": "^1.1.2",
     "caniuse-lite": "^1.0.30001412",
@@ -45,6 +46,7 @@
     "kind-of": "^6.0.3",
     "loader-runner": "^4.3.0",
     "locate-path": "^5.0.0",
+    "lodash": "^4.17.21",
     "merge-stream": "^2.0.0",
     "mime-db": "^1.52.0",
     "mime-types": "^2.1.35",
@@ -86,6 +88,7 @@
     "wildcard": "^2.0.0"
   },
   "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "webpack --mode development",
     "build": "webpack --mode=production --node-env=production",
     "build:dev": "webpack --mode=development",
@@ -105,6 +108,7 @@
     "babel-loader": "^8.2.5",
     "css-loader": "^6.7.1",
     "html-webpack-plugin": "^5.5.0",
+    "lodash-webpack-plugin": "^0.11.6",
     "postcss": "^8.4.16",
     "postcss-loader": "^7.0.1",
     "prettier": "^2.7.1",
