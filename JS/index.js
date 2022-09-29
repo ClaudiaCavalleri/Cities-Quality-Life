@@ -7,7 +7,6 @@ const intro = document.querySelector('.introduction');
 const totalScore = document.querySelector('.total-score-wrapper');
 const citySummary = document.querySelector('.city-summary');
 const scoreWrapper = document.querySelector('.score-wrapper');
-const loaderContainer = document.querySelector('.loader-container');
 let cityName;
 
 //Add website's introduction
