@@ -1,5 +1,5 @@
 <h1>JavaScript Advanced project</h1>
-This is my JavaScript Advanced project for Start2Impact University
+<p>This is my JavaScript Advanced project for Start2Impact University.</p>
 
 <p>The purpose is to check the quality of life in a city you like, straight from your sofa, by a list of parameters and its own score. To do so, I envolved  as request an external service, an API, which is <a href="https://teleport.org/">Teleport</a>.</p>
 
