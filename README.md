@@ -21,7 +21,7 @@ The JavaScript Advanced project for Start2Impact
 <p>let's talk about what's beneath the skin: the focal points of this project are the correct use of a third-part-API, because it was the first time for me, and the use of a bundler, like <a href="https://webpack.js.org" target="_blank">Webpack</a>, that was a bit hard to me to understand formerly.</p>
 <p>
   
-<h4>The source code is available <a href="" target="_blank">HERE</a> on GitHub.</h4>
+<h4>The source code is available on <a href="https://github.com/ClaudiaCavalleri/Cities-Score" target="_blank">GitHub</a>.</h4>
 
 # <h2>Credits</h2>
 
