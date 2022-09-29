@@ -1,4 +1,4 @@
-# <h1>JS-Advanced-s2i</h1>
+# <h1>JavaScript Advanced project</h1>
 This is my JavaScript Advanced project for Start2Impact University
 
 <p>The purpose is to check the quality of life in a city you like, straight from your sofa, by a list of parameters and its own score. To do so, I envolved  as request an external service, an API, which is <a href="https://teleport.org/">Teleport</a>.</p>
@@ -22,6 +22,9 @@ This is my JavaScript Advanced project for Start2Impact University
 <p>
   
 <h4>The source code is available on <a href="https://github.com/ClaudiaCavalleri/Cities-Score" target="_blank">GitHub</a>.</h4>
+
+# <h2>Aboute the name</h2>
+<p>For the name I was inspired by a mobile app that tracks a lot of sports' results, called SofaScore</p>
 
 # <h2>Credits</h2>
 
