@@ -8,7 +8,7 @@ const isProduction = process.env.NODE_ENV == "production";
 const stylesHandler = "style-loader";
 
 const config = {
-  entry: "./JS/index.js",
+  entry: "./src/JS/index.js",
   output: {
     path: path.resolve(__dirname, "dist"),
   },
@@ -32,7 +32,7 @@ const config = {
       },
       {
         test: /\.css$/i,
-        use: [stylesHandler, "css-loader", "postcss-loader"],
+        use: [stylesHandler, "css-loader"],
       },
       {
         test: /\.(eot|svg|ttf|woff|woff2|png|jpg|gif)$/i,

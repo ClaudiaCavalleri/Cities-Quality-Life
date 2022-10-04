@@ -5,18 +5,21 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
         <title>Cities'score</title>
         <script src="https://kit.fontawesome.com/dae0a1b161.js" crossorigin="anonymous"></script>
-        <link rel="icon" href="IMG/favicon.ico">
-        <link rel='stylesheet' href="/CSS/style.css">
+        <link rel="icon" type="image/x-icon" href="/src/IMG/favicon.ico">
+        <link rel='stylesheet' href="/src/CSS/style.css">
     </head>
     <body>
         <header>
             <section class="header-container">  
                 
                 <div class="search-wrapper">   
-                    <form>
+                    <form autocomplete='off'>
                         <div class="search-box">
                             <input type="text" class="input" id="city-inp" placeholder="Enter the name of your dream city">
                             <div id="search-icon"><i class="fa-solid fa-magnifying-glass"></i></div>
+                        </div>
+                        <div class="hints-container">
+                            <ul id="city-hints"></ul>
                         </div>
                     </form> 
                 </div> 
@@ -27,9 +30,15 @@
         <article> 
             <section class="result-container"> 
                 <h1 id='cityTitle'>Your best place to live</h1>
-                
-                <div class='introduction'></div>
-                
+                <div class='introduction'>
+                    <p>Imagine to live and work in your <strong>dream city</strong>, which one could it be?</p>
+                    <p>If you already don't know, let's give a look to our selection of the greatest cities in the world
+                        and their <strong>quality levels</strong>.
+                    </p>                            
+                    <p>Compare <strong>life quality data</strong> for hundreds of cities worldwide
+                        and get a <strong>city ranking</strong> based on your <strong>personal preferences</strong>.
+                    </p>
+                </div>
                 <div class = "card-wrapper">
                     <div class = "card">
                         <div class="total-score-wrapper data-wrapper"></div>
@@ -46,6 +55,6 @@
             <small>Copyright: <a href='https://github.com/ClaudiaCavalleri' target=_blank>Claudia Cavalleri</a> © 2022 | Powered by <a href="https://teleport.org" target="_blank" alt="Teleport Website">Teleport</a>.</small>
         </footer>
 
-        <script type='module' src="dist/main.js"></script>
+        <script type='module' src="/dist/main.js"></script>
     </body>
 </html>

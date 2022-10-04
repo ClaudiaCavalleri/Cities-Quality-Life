@@ -1,0 +1,269 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "Maven";
+    src: url("../Font/Maven_Pro/MavenPro-VariableFont_wght.ttf") format("woff");
+}
+
+:root {
+    --white: #FFFFFF;
+    --teal: #13445D;
+    --turquoise:#5093B3;
+}
+
+/* clears the 'X' from Chrome */
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration { display: none; }
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body {
+    font-size: 20px;
+    text-align: center;
+    color: var(--teal);
+    font-family: "Maven", sans-serif;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100vw; 
+    height: 50vh;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../IMG/RomeWP.jpg);
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 0px 5px 10px rgba(0,0,0, 0.2);
+}
+
+.header-container {
+    background: rgba(255,255,255, 0.5);
+    padding: 5vh 10vw;
+    border-radius: 10px;
+}
+
+h1 {
+    font-family: "Maven";
+    text-align: center;
+    font-size: 2.5rem;
+    margin: 2rem;
+    text-shadow: 2px 2px 5px var(--turquoise);
+}
+
+h2 {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-top: 1rem;
+}
+
+h2:hover {
+    color: burlywood;
+    transform: scale(1.2);
+}
+
+.city-summary h2:hover {
+    color: var(--teal);
+    transform: none;
+}
+
+h3 {
+    font-size: 1rem;
+}
+
+p {
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.search-wrapper {
+    width: 100%;
+    display: flex;
+    position: relative;
+    margin: 0 auto;
+    flex-direction: row;
+    justify-content: center;
+    z-index: 3;
+}
+
+.search-box {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 60vw;
+    margin: 1em;
+    background-color: var(--white);
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px var(--teal);
+}
+
+#search-icon {
+    position: absolute;
+    top: 1.7rem;
+    right: 2.5rem;
+    font-size: 1.2rem;
+    padding: 0.5rem;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#search-icon:hover{
+    color: var(--turquoise);
+}
+
+.search-box input {
+    border: none;
+    font-size: 1rem;
+    padding: 1rem;
+    border-radius: 10px;
+    background-color: var(--white);
+}
+
+.error-box p {
+    color: red;
+}
+
+.introduction {
+    text-align: center;
+    margin: 0 auto;
+    font-weight: 100;
+    max-width: 80vw;   
+}
+
+.result-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 60vw;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.total-score-wrapper {
+    padding-bottom: 2rem;
+}
+
+.categories-wrapper {
+    margin: 0 auto;
+}
+
+.data-wrapper {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--white);
+    justify-content: center;
+    align-items: center;
+}
+
+.city-summary {
+    margin: 0 auto;
+    font-weight: 100;
+    max-width: 80vw;
+}
+
+.score-wrapper {
+    margin-top: 1.5rem;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 8vh;
+    width: 100vw;
+    color: var(--teal);
+    background-color: var(--turquoise);
+    z-index: 2;
+}    
+
+footer small {
+    width: 90vw;
+}
+
+footer a {
+    text-decoration: none;
+    color: var(--teal);
+    font-weight: 500;
+}
+
+footer a:hover {
+    color:bisque;
+}
+
+@media only screen and (max-width: 600px) {
+    .header-container {
+        padding: 5vh 5vw;
+    }
+    .search-box {
+        width: 80vw;
+    }
+    .introduction {
+        font-weight: 200;
+        max-width: 90vw;   
+    }
+    .result-container {
+        width: 90vw;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    h1 {
+        font-size: 4rem;
+    }
+    h2 {
+        margin-top: 0;
+    }
+    p {
+        padding: 0;
+    }
+    .result-container {
+        width: 90vw;
+    }
+    .card-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .card {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        width: 40vw;
+    }
+    .city-summary {
+        height: 75%;
+        flex-grow: 1;
+        border-bottom: none !important;
+    }
+    .total-score-wrapper {
+        height: 25%;
+        flex-grow: 2;
+
+    }
+    .score-wrapper h2 {
+        font-size: 1.5rem;
+        font-weight: 500;
+        padding: 0.5rem;
+    }
+
+}
